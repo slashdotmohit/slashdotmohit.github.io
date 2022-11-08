@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head class="content-width-normal">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>games</title>
+<link class="theme" rel="stylesheet" href="../css/default-light.css"/>
+<link rel="stylesheet" href="../fonts/fonts.css"/> 
+
+
+</head>
+<body>
+</div>
+<div id="content" class="about-page">
+<button type="button" class="select-theme-default" id="dark-toggle" title="Default theme (dark text on light background)">🌗</button>
+<script>
+    const theme = document.getElementsByClassName("theme")[0];
+    const toggleButton = document.getElementById('dark-toggle')
+    toggleButton.addEventListener('click', () => {
+        if (theme.getAttribute('href') == '../css/default-light.css') {
+                theme.setAttribute('href', '../css/default-dark.css');
+        }
+        else{
+            theme.setAttribute('href', '../css/default-light.css');}
+        
+        if (theme.getAttribute('href') == '../css/default-dark.css'){
+            localStorage.setItem('dark', 'enabled')
+        }
+        else{
+            localStorage.setItem('dark', 'disabled')
+        }});
+    if (localStorage.getItem('dark') == 'enabled'){
+        theme.setAttribute('href', '../css/default-dark.css');
+    }      
+</script>
+<nav id="primary-bar" class="nav-bar nav-bar-top inactive-bar">
+
+<span id="nav-item-all" class="nav-item nav-inactive" title="latest posts from all sections"><a href="../all.html" class="nav-inner" accesskey="a">all</a></span>
+<span id="nav-item-about" class="nav-item nav-inactive" title="about"><a href="../index.html" class="nav-inner" accesskey="b">about</a></span>
+<span id="nav-item-featured" class="nav-item nav-inactive" title="links"><a href="../links.html" class="nav-inner" accesskey="l">links</a></span>
+</nav>
+<nav id="secondary-bar" class="nav-bar nav-bar-top inactive-bar">
+<span id="nav-item-music" class="nav-item nav-inactive" title="music"><a href="music.html" class="nav-inner" accesskey="m">🎵</a></span>
+<span id="nav-item-game" class="nav-item nav-inactive" title="games"><a href="games.html" class="nav-inner" accesskey="g">🎮</a></span>
+<span id="nav-item-motv" class="nav-item nav-inactive" title="movies/tv"><a href="motv.html" class="nav-inner" accesskey="t">🎞</a></span>
+<span id="nav-item-mindtrash" class="nav-item nav-inactive" title="mindtrash"><a href="/mindtrash.html" class="nav-inner" accesskey="l">📕</a></span>
+
+</nav>
+
+<div class="post">
+<div class="post-body body-text">
+<h1>i like playing video games 🎮</h1>
+<p>i love most racing games, but my specific favorite is Trackmania
+<img src="../assets/tmnf.png"
+style="width: 23px; vertical-align: middle;">. i have logged about 300+ hours on <a href="https://store.steampowered.com/app/11020/TrackMania_Nations_Forever/"
+title="TMNF">TrackMania Nations Forever</a> and about 150+ hours on <a href="https://www.ubisoft.com/en-us/game/trackmania/trackmania"
+title="new TM">the new TrackMania</a>. i hope to get into Asseto Corsa soon, but
+i even procrastinate playing games, so...</p>
+<p>apart from my obsession for racing, i like RPGs a lot, especially single-player
+ones such as Witcher III: Wild Rift, Elder Scrolls V: Skyrim (<i>latest obsession</i>) and RuneScape (Ironman mode). not because i don't
+have friends, but, well, </p>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head class="content-width-normal">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>the music sub-blog</title>
+<link rel="stylesheet" class="theme" href="../../css/default-light.css"/>
+<link rel="stylesheet" href="../../fonts/fonts.css"/>
+
+</head>
+<body class="theme-brutalist">
+<div id="content" class="post-page comment-thread-page">
+<button type="button" class="select-theme-default" id="dark-toggle" title="Default theme (dark text on light background)">🌗</button>
+<script>
+    const theme = document.getElementsByClassName("theme")[0];
+    const toggleButton = document.getElementById('dark-toggle')
+    toggleButton.addEventListener('click', () => {
+        if (theme.getAttribute('href') == '../../css/default-light.css') {
+                theme.setAttribute('href', '../../css/default-dark.css');
+        }
+        else{
+            theme.setAttribute('href', '../../css/default-light.css');}
+        
+        if (theme.getAttribute('href') == '../../css/default-dark.css'){
+            localStorage.setItem('dark', 'enabled')
+        }
+        else{
+            localStorage.setItem('dark', 'disabled')
+        }});
+    if (localStorage.getItem('dark') == 'enabled'){
+        theme.setAttribute('href', '../../css/default-dark.css');
+    }      
+</script>
+<nav id="primary-bar" class="nav-bar nav-bar-top inactive-bar">
+<span id="nav-item-all" class="nav-item nav-inactive" title="latest posts from all sections"><a href="../../all.html" class="nav-inner" accesskey="a">all</a></span>
+<span id="nav-item-about" class="nav-item nav-inactive" title="about"><a href="../../index.html" class="nav-inner" accesskey="b">about</a></span>
+<span id="nav-item-featured" class="nav-item nav-inactive" title="links"><a href="../../links.html" class="nav-inner" accesskey="l">links</a></span>
+</nav>
+<nav id="secondary-bar" class="nav-bar nav-bar-top inactive-bar">
+<span id="nav-item-music" class="nav-item nav-inactive" title="music"><a href="../music.html" class="nav-inner" accesskey="m">🎵</a></span>
+<span id="nav-item-game" class="nav-item nav-inactive" title="games"><a href="../games.html" class="nav-inner" accesskey="g">🎮</a></span>
+<span id="nav-item-motv" class="nav-item nav-inactive" title="movies/tv"><a href="../motv.html" class="nav-inner" accesskey="t">🎞</a></span>
+<span id="nav-item-mindtrash" class="nav-item nav-inactive" title="mindtrash"><a href="../mindtrash.html" class="nav-inner" accesskey="n">📕</a></span>
+</nav>
+<main class="post">
+<h1 class="post-title">the music sub-blog</h1>
+<div class="post-meta top-post-meta">
+    <a class="author" href="../../index.html" data-full-name="">mohit</a>
+    <span class="date" data-js-date="1650137640">Apr 16, 2022, 7:34 PM</span>
+<div class="body-text post-body">
+
+<p>here, i will be posting my album reviews and albums of the week, hopefully regularly.
+but let me first familiarise you with my music taste.</p>
+<p class="imgonly">
+<a href="../../assets/listen.jpeg" target="_blank" title="but TAYLOR SWIFT MADE AN INDIE FOLK ALBUM!!! shut up.">
+<img src="../../assets/listen.jpeg">
+</a>
+</p>
+<h5>i like to believe that i am a jaded adult.</h5>
+<p>
+    but it's probably in some sort of purgatory between the awakening and the jaded adult, defaulting to neither side. <br>
+    regardless, as i've mentioned (and will keep mentioning), my favorite bands (or artistes) are Radiohead and Aphex Twin. i like electronica and alt rock (or rock in general) — Björk, Pink Floyd, Bon Iver, Mitski and James Blake  being some of my other favorite artistes from these genres.<br>
+i also really like Lana Del Rey and Fiona Apple; Norman Fucking Rockwell is <a href="https://www.last.fm/user/mojomomos/library/albums">my most listened-to album of all time</a>.<br>
+    anyways, if you want to get a sense of what i listen to in general, i think this playlist describes it fairly well: <br>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/46Gwyt3XSWCdUHqz506DBB?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</p>
+</div>
+<div class="backlinks">
+    <input type="checkbox" id="expand">
+    <label for="expand">what links here?</label>
+    <ul>
+    <li>nothing yet</li>
+    </ul>
+</div>
+
+</main>
+</div>
+
+</body>
+
+</html>
